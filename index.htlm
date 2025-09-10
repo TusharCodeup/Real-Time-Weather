@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Details</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌤️ Weather Details</h1>
+
+        
+        <div class="search-box">
+            <input type="text" id="locationInput" placeholder="Enter city name...">
+            <button onclick="searchWeather()">🔍 Search</button>
+        </div>
+
+        
+        <div class="toggle-container">
+            <label for="tempToggle">°C / °F</label>
+            <label class="toggle-switch">
+                <input type="checkbox" id="tempToggle" onchange="toggleTemperature()">
+                <span class="slider"></span>
+            </label>
+        </div>
+        
+
+        
+        <div class="weather-info">
+            <h2 id="locationName">📍 City, Country</h2>
+            <p>🕒 <span id="time">00:00</span></p>
+            
+            <div>
+                🌡️ Temperature: <span id="temperature">--</span>°C
+            </div>
+            <div>
+                ☁️ Condition: <span id="condition">--</span>
+            </div>
+            <div>
+                💧 Humidity: <span id="humidity">--</span>%
+            </div>
+            <div>
+                💨 Wind Speed: <span id="windSpeed">--</span> km/h
+            </div>
+            <div>
+                🧭 Wind Direction: <span id="windDir">--</span>
+            </div>
+            <div>
+                🌡️ Feels Like: <span id="feelsLike">--</span>°C
+            </div>
+            <div>
+                🌞 UV Index: <span id="uvIndex">--</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>
