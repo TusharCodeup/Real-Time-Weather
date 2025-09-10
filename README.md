@@ -26,20 +26,3 @@ Backend (optional): Node.js/Express
 
 API: OpenWeatherMap (or any weather API you used)
 
-🚀 How to Run Locally
-
-Clone the repository:
-
-git clone https://github.com/TusharCodeup/realtime-weather-detection.git
-
-
-Navigate into the project folder:
-
-cd realtime-weather-detection
-
-
-Open index.html in your browser (if frontend only).
-OR run the server (if backend included):
-
-npm install
-npm start
